@@ -6,7 +6,16 @@
 <meta name="robots" content="noindex, nofollow">
 <meta name="theme-color" content="#6C5CE7">
 <title>서비스 점검 안내 | 하루상자 · RollingPaper</title>
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%236C5CE7'/%3E%3Cpath d='M18 32h28M32 18v28' stroke='white' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E">
+<link id="site-icon" rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ctext y='52' font-size='52'%3E%F0%9F%92%8C%3C/text%3E%3C/svg%3E">
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  if (location.hostname === 'box.harooo.co.kr') {
+    const icon = document.getElementById('site-icon');
+    icon.type = 'image/png';
+    icon.href = document.querySelector('.box-logo img').src;
+  }
+});
+</script>
 <style>
 *{box-sizing:border-box}
 body{margin:0;min-height:100vh;min-height:100svh;display:grid;place-items:center;padding:24px;background:radial-gradient(ellipse at 12% 12%,#ede9fe 0,transparent 48%),radial-gradient(ellipse at 90% 85%,#fce7f3 0,transparent 48%),#f1f5f9;color:#1e293b;font-family:-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Malgun Gothic','Segoe UI',sans-serif;-webkit-font-smoothing:antialiased}
